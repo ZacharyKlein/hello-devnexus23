@@ -13,11 +13,14 @@ repositories {
 dependencies {
     annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+    annotationProcessor("io.micronaut.openapi:micronaut-openapi")
+
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut.reactor:micronaut-reactor")
     implementation("io.micronaut.reactor:micronaut-reactor-http-client")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     implementation("jakarta.annotation:jakarta.annotation-api")
+    implementation("io.swagger.core.v3:swagger-annotations")
     runtimeOnly("ch.qos.logback:logback-classic")
     compileOnly("org.graalvm.nativeimage:svm")
 
