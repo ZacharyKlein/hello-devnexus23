@@ -5,3 +5,13 @@ netty:
   default:
     allocator:
       max-order: 3
+---
+micronaut:
+  http:
+    services:
+      github:
+        url: 'https://api.github.com'
+---
+github:
+  organization: micronaut-projects
+  repo: micronaut-core
